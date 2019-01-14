@@ -1,0 +1,36 @@
+/*.View{
+  width:100%;
+  height:100%;
+  float:right;
+  position: fixed;
+  margin : 300px 0 0 70px;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 25px;
+}*/
+.View{
+  width:25px;
+  height: 100vh;
+  float:left;
+}
+
+ #ViewText{
+   padding: 300px 0 0 70px;
+   position: fixed;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 25px;
+}
+#ViewText:hover{
+  cursor:pointer;
+}
+
+@media (max-width:1000px){
+  #ViewText{
+    padding: 0 ;
+    margin: 0;
+  }
+  .View{
+    width: 0;
+  }
+}

@@ -1,0 +1,154 @@
+.Poster{
+  width: 900px;
+  padding: .5vw;
+  font-size: 0;
+  border: 15px solid whitesmoke;
+  margin-right: 35px;
+  float: right;
+  column-count: 3;
+  column-gap:  5px;
+}
+
+.Poster #ImageId{
+  line-height: 0;
+}
+
+.Poster  #ImageSize
+{
+  width:100%;
+  height:auto;
+}
+
+#ImageId:hover #ImageSize{
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 1200px)
+{
+  .Poster{
+    width: 700px;
+     column-count:2;
+  }
+}
+@media (max-width: 1000px)
+{
+  .Poster{
+    width: 700px;
+    column-count:2;
+  }
+}
+/*@media (max-width: 990px)
+{
+  .Poster{
+     column-count:1;
+     border: 1px solid whitesmoke;
+  }
+}*/
+@media screen and (max-width: 960px)
+{
+  .Poster{
+     column-count:1;
+     border: 0;
+     float: right;
+  }
+  .Poster  #ImageSize
+  {
+    width:500px;
+    height:auto;
+  }
+  .Poster #ImageId{
+    float:right;
+  }
+}
+@media screen and (max-width: 600px)
+{
+  .Poster{
+      width:500px;
+     column-count:1;
+     border: 0;
+     margin-right: 0;
+  }
+  .Poster  #ImageSize
+  {
+    width:60vh;
+    height:auto;
+  }
+}
+
+/* List Format*/
+
+.NonPoster{
+  width: 650px;
+  padding-left:70px;
+  font-size: 0;
+  border: 2px solid whitesmoke;
+  column-count: 1;
+  float: right;
+  margin-right: 184px;
+}
+.NonPoster #NoImageId{
+  flex: auto;
+  width: 500px;
+  height:auto;
+  margin: .5vw;
+}
+
+.NonPoster #NoImageSize{
+  width:100%;
+  height:auto;
+}
+
+@media screen and (max-width:900px) {
+  .NonPoster{
+    width:500px;
+    float: right;
+    margin-right: 2px;
+    padding-left: 0;
+    border: 0px;
+  }
+  .NonPoster #NoImageId{
+    margin: 0;
+  }
+}
+@media screen and (max-width:525px) {
+  .NonPoster{
+    width:400px;
+    float: right;
+    margin-right: 2px;
+    padding-left: 0;
+  }
+  .NonPoster #NoImageId{
+    margin: 0;
+  }
+}
+@media screen and (max-width:414px) {
+  .NonPoster{
+    width:390px;
+    float: right;
+    margin-right: 2px;
+    padding-left: 0;
+  }
+  .NonPoster #NoImageId{
+    margin: 0;
+  }
+}
+#NoImageId:hover #NoImageSize{
+  transform: scale(1.1);
+}
+
+
+/*.Poster{
+  right: 70px;
+  max-width: 900px;
+  height: 100%;
+  background: #333333;
+  float: right;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: row;
+  -webkit-flex-flow: row wrap;
+  flex-flow : row wrap;
+}*/
