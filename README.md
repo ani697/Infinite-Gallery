@@ -12,8 +12,7 @@ The logic of creating infinite scroll is depend on 3 things:-
 
 Logic which i used in my project:-
 if(this.ScrollRef.current.scrollTop+this.ScrollRef.current.clientHeight>=this.ScrollRef.current.scrollHeight-20)
-{
      //LoadMoreContent
-}
+     
 Now the question is why i subtract scrollHeight by 20? 😕 
 Remeber one thing always start loading the content when the scrollbar is about to reach the end of the scrollbar because if webpage load   the content when the scrollbar is at the end, the user have to wait for sometime, that's why i start loading the content as my scrollbar   is 20 magnitude above from the end point of scrollbar. As webpage also get time to load the content and user doesn't have to wait and     keep scrolling 
